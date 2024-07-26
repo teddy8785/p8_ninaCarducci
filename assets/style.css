@@ -141,17 +141,6 @@ body {
 	padding: .5em;
 }
 
-.mg-prev,
-.mg-next {
-	width: 30px;
-	height: 30px;
-	border-radius: 00%;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	font-size: 24px;
-}
-
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
@@ -208,11 +197,6 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
-}
-
-/* ajout class service__price avec la taille */
-.service__price {
-	font-size: 25px;
 }
 
 #contact {
