@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="description"
 		content="Portfolio de Nina Carducci qui regroupe mes créations artistiques ainsi que mes coordonées pour faire appel à mes services">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:name" content="Nina Carducci" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Venez découvrir mes productions photographiques" />
+	<meta property="og:image" content="./assets/images/nina_petit.WebP" />
+
+	<meta name="twitter:title" content="Nina Carducci - Photographe" />
+	<meta name="twitter:description" content="Venez découvrir mes fantastiques photos" />
+	<meta name="twitter:image" content="./assets/images/nina_petit.WebP" />
+
 	<link rel="stylesheet" href="./assets/bootstrap_purge/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +27,13 @@
 </head>
 
 <body>
+
+	<div itemscope itemtype="http://schema.org/Person">
+		<meta itemprop="name" content="Nina Carducci" />
+		<meta itemprop="telephone" content="0555677889" />
+		<meta itemprop="openingHours" content="du lundi au Vendredi de 10h à 19h" />
+	</div>
+
 	<header class="top-header">
 		<h1 class="name">Nina Carducci</h1>
 		<div class="nav">
@@ -69,8 +86,8 @@
 							media="(max-width:768px)">
 						<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-gros.WebP"
 							media="(max-width:1980px)">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.WebP" class="d-block w-100"
-							alt="a married man and woman dancing" loading="lazy">
+						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.WebP"
+							class="d-block w-100" alt="a married man and woman dancing" loading="lazy">
 					</picture>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -87,11 +104,9 @@
 			</div>
 			<div id="about">
 				<div class="picture left">
-					<img 
-					srcset="./assets/images/nina_petit.WebP 480w,
-					./assets/images/nina_petit.WebP 768w"
-					sizes="(max-width:480px) 480w, (max-width:768px) 768w"
-					src="./assets/images/nina_moyen.WebP" alt="Portrait of Nina Carducci">
+					<img srcset="./assets/images/nina_petit.WebP 480w,
+					./assets/images/nina_petit.WebP 768w" sizes="(max-width:480px) 480w, (max-width:768px) 768w"
+						src="./assets/images/nina_moyen.WebP" alt="Portrait of Nina Carducci">
 				</div>
 				<div id="about-me">
 					<h2 class="about-me__title">A propos de moi</h2>
@@ -111,75 +126,66 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-						<img data-gallery-tag="Concert" class="gallery-item"
-							srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-petit.WebP 480w,
 							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-moyen.WebP 768w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w"
-							src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.WebP"
-							alt="concert with red spotlights" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w"
+						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.WebP"
+						alt="concert with red spotlights" loading="lazy" />
 
-						<img data-gallery-tag="Entreprises" class="gallery-item"
-							srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-petit.WebP 480w,
 							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.WebP"
-							alt="a man in a suit" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.WebP"
+						alt="a man in a suit" loading="lazy" />
 
-						<img data-gallery-tag="Entreprises" class="gallery-item"
-							srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-petit.WebP 480w,
 							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.WebP"
-							alt="a woman who smiles" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.WebP"
+						alt="a woman who smiles" loading="lazy" />
 
-						<img data-gallery-tag="Mariages" class="gallery-item"
-							srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-petit.WebP 480w,
 							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.WebP"
-							alt="hands touching" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.WebP"
+						alt="hands touching" loading="lazy" />
 
-						<img data-gallery-tag="Portrait" class="gallery-item"
-							srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-petit.WebP 480w,
 							./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-moyen.WebP 768w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w"
-							src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.WebP"
-							alt="a man who closes his eyes" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w"
+						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.WebP"
+						alt="a man who closes his eyes" loading="lazy" />
 
-						<img data-gallery-tag="Mariages" class="gallery-item"
-							srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-petit.WebP 480w,
 							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-normal.WebP"
-							alt="a married man and woman holding hands" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-normal.WebP"
+						alt="a married man and woman holding hands" loading="lazy" />
 
-						<img data-gallery-tag="Portrait" class="gallery-item"
-							srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-petit.WebP 480w,
 							./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.WebP"
-							alt="a woman with glasses" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.WebP"
+						alt="a woman with glasses" loading="lazy" />
 
-						<img data-gallery-tag="Concert" class="gallery-item"
-							srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-petit.WebP 480w,
 							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.WebP"
-							alt="a singer who makes four with his fingers" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.WebP"
+						alt="a singer who makes four with his fingers" loading="lazy" />
 
-						<img data-gallery-tag="Entreprises" class="gallery-item"
-							srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-petit.WebP 480w,
+					<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-petit.WebP 480w,
 							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-moyen.WebP 768w,
 							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-gros.WebP 1980w"
-							sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
-							src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.WebP"
-							alt="a woman who smiles" loading="lazy"/>
+						sizes="(max-width:480px) 480w, (max-width:768px) 768w, (max-width:1980px) 1980w"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.WebP"
+						alt="a woman who smiles" loading="lazy" />
 				</div>
 			</div>
 			<div class="quote">
@@ -259,7 +265,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.WebP" alt="camera">
+				<img src="./assets/images/camera.WebP" alt="camera" loading="lazy">
 			</div>
 		</div>
 	</footer>
