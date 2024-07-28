@@ -28,7 +28,7 @@
 
 <body>
 
-	<div itemscope itemtype="https://schema.org/LocalBusiness">
+	<!-- <div itemscope itemtype="https://schema.org/LocalBusiness">
 		<span itemprop="name" content="Nina Carducci"></span>
 		<span itemprop="image" content="./assets/images/nina_petit.WebP"></span>
 		<span itemprop="telephone" content="0555677889"></span>
@@ -37,7 +37,22 @@
 		<span itemprop="addressLocality" content="Bordeaux"></span>
 		<span itemprop="addressCountry" content="France"></span>
 		<span itemprop="openingHours" content="Mo-Fr 10:00-19:00"></span>
-	</div>
+	</div> -->
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"image": "./assets/images/nina_petit.WebP",
+			"telephone": "0555677889",
+			"address": "68 avenue Alsace-Lorraine",
+			"postalCode": "33200",
+			"addressLocality": "Bordeaux",
+			"addressCountry": "France",
+			"openingHours": "Mo-Fr 10:00-19:00"
+		}
+	</script>
 
 	<header class="top-header">
 		<h1 class="name">Nina Carducci</h1>
